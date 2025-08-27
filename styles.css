@@ -1,10 +1,19 @@
-body {
+/* General body styling */
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: Arial, sans-serif;
   text-align: center;
+  scroll-behavior: smooth; /* smooth scrolling effect */
+}
+
+/* Main page (first background) */
+.main-page {
+  height: 100vh; /* full screen */
   background: url("assets/background_krics.png") no-repeat center center fixed;
   background-size: cover;
-  min-height: 100vh;
+  position: relative; /* absolute elements stay inside */
 }
 
 .logo img {
@@ -83,10 +92,10 @@ nav a {
   transition: all 0.3s ease;
   
   /* Animation */
-  opacity: 0;             /* start invisible */
-  transform: scale(0.9);  /* slightly smaller */
+  opacity: 0;             
+  transform: scale(0.9);  
   animation: fadeInUp 1s ease forwards;
-  animation-delay: 4.0s;  /* delay before it appears */
+  animation-delay: 4.0s; 
 }
 
 .btn:hover {
@@ -96,15 +105,40 @@ nav a {
   transform: scale(1.08);
 }
 
-/* Keyframes for fade-in + scale up */
+/* Fade-in animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px) scale(0.9); /* start slightly below */
+    transform: translateY(20px) scale(0.9);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);      /* final position */
+    transform: translateY(0) scale(1);
   }
+}
+
+/* Services section (second background) */
+.services-section {
+  height: 100vh; 
+  background: url("assets/background_krics2.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Placeholder sections */
+.placeholder-section {
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
