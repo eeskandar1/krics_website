@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url("assets/background_krics.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.logo img {
+  height: 50px;
+  display: block;
+  margin: 20px auto;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 55px;
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.headline {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.subtopic {
+  font-family: "Electrolize", sans-serif;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  display: inline-block;
+}
+
+.glow {
+  text-shadow: 
+    0 0 5px #00f0ff,
+    0 0 10px #ff00f7,
+    0 0 20px #00ff6a;
+  animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 5px #00f0ff, 0 0 10px #ff00f7, 0 0 20px #00ff6a; }
+  50% { text-shadow: 0 0 8px #00f0ff, 0 0 15px #ff00f7, 0 0 25px #00ff6a; }
+  100% { text-shadow: 0 0 5px #00f0ff, 0 0 10px #ff00f7, 0 0 20px #00ff6a; }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 450px; /* space below subtopic */
+  padding: 14px 40px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  background: #111;
+  border: 2px solid #00f0ff;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff inset;
+  transition: all 0.3s ease;
+  
+  /* Animation */
+  opacity: 0;             /* start invisible */
+  transform: scale(0.9);  /* slightly smaller */
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 4.0s;  /* delay before it appears */
+}
+
+.btn:hover {
+  background: #00f0ff;
+  color: #111;
+  box-shadow: 0 0 25px #00f0ff, 0 0 50px #00f0ff, 0 0 100px #00f0ff;
+  transform: scale(1.08);
+}
+
+/* Keyframes for fade-in + scale up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9); /* start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);      /* final position */
+  }
+}
+
