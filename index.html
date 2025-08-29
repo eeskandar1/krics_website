@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krics Website</title>
-  <!-- Link to external CSS -->
+  <title>Krics</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Main Page Section -->
-  <section class="main-page">
-    <div class="logo">
-      <img src="assets/white_kricks.png" alt="Krics Logo">
-    </div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <!-- Your logo image goes here -->
+        <img src="assets/white_kricks.png" alt="Krics Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">CONTACTS</a></li>
+      </ul>
     </nav>
-    <div class="headline">
-      Turning Your Ideas <br> Into Electronics
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>TURNING YOUR IDEAS</h2>
+      <h1>INTO ELECTRONICS</h1>
+      <p class="subtopic"id="typewriter-text">Bring Your Ideas To Us. We'll Build, Design and<br>bring them to Life!</p>
+      <!-- Scroll Down Indicator -->
+    <a href="#services" class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span class="scroll-text">LETS GO</span>
+    </a>
     </div>
-    <div class="subtopic" id="subtopic">
-      Bring your ideas to us. We'll design, build and bring them to life
+  </section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">OUR SERVICES</h2>
+    <div class="service-cards">
+
+      <a href="project_dev.html" class="service-link">
+        <div class="service-card" style="background-image: url('assets/service\ 1.png');">
+          <div class="service-content">
+            <h3>PROJECT DEVELOPMENT</h3>
+            <p>CLICK FOR MORE ></p>
+          </div>
+        </div>
+      </a>
+
+      <a href="CONSULTATION.html" class="service-link">
+        <div class="service-card" style="background-image: url('assets/service\ 2.png');">
+          <div class="service-content">
+            <h3>CONSULTATION</h3>
+            <p>CLICK FOR MORE ></p>
+          </div>
+        </div>
+      </a>
+
+      <a href="troubleshooting.html" class="service-link">
+        <div class="service-card" style="background-image: url('assets/service\ 3.png');">
+          <div class="service-content">
+            <h3>TROUBLESHOOTING</h3>
+            <p>CLICK FOR MORE ></p>
+          </div>
+        </div>
+      </a>
+
+      <a href="soldering.html" class="service-link">
+        <div class="service-card" style="background-image: url('assets/service\ 4.png');">
+          <div class="service-content">
+            <h3>SOLDERING</h3>
+            <p>CLICK FOR MORE ></p>
+          </div>
+        </div>
+      </a>
+
     </div>
+  </div>
+</section>
 
-    <a href="#services" class="btn">Get Started</a>
-  </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-    <h2>Our Services</h2>
-  </section>
 
-  <!-- Placeholder sections for smooth navigation -->
-  <section id="projects" class="placeholder-section">
-    <h2>Projects Section</h2>
-  </section>
-  <section id="contact" class="placeholder-section">
-    <h2>Contact Section</h2>
-  </section>
-
-  <!-- Link to external JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
