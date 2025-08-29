@@ -23,23 +23,22 @@ header.scrolled {
 
 .navbar {
   display: flex;
-  justify-content: center;   /* center everything horizontally */
-  align-items: center;       /* center vertically */
-  position: relative;
+  justify-content: space-between; /* logo on left, links on right */
+  align-items: center;
   padding: 0 20px;
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  top: 50%;
+  position: relative; /* remove absolute positioning */
+  transform: none;    /* reset transform */
+  top: auto;
+  left: auto;
 }
 
 .logo img {
   height: 50px;
+  max-width: 100%;
 }
-
 .nav-links {
   list-style: none;
   margin-left: auto;
