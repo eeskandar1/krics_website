@@ -365,8 +365,8 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 768px) {
 .logo img {
-  height: 50px;
-  margin-top: 10px;
+  top: 60%; /* default 50% → push down */
+  transform: translate(-50%, -50%);
 }
   
   header { 
@@ -427,6 +427,7 @@ html { scroll-behavior: smooth; }
     display: block; /* visible on mobile */
   }
 }
+
 
 
 
