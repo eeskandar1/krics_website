@@ -364,6 +364,10 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 768px) {
+.logo img {
+  height: 50px;
+}
+  
   header { 
     padding: 15px 20px; 
   }
@@ -422,3 +426,4 @@ html { scroll-behavior: smooth; }
     display: block; /* visible on mobile */
   }
 }
+
